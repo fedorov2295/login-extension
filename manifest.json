@@ -1,0 +1,26 @@
+{
+	"manifest_version": 2,
+	"name": "Dummy Login",
+	"description": "Allows you to login with google account",
+	"version": "1.0",
+	"icons": {
+		"16": "/images/lock16.png",
+		"48": "/images/login-7-48.png",
+		"128": "/images/lock128.png"
+	},
+	"browser_action": {
+		"default_popup": "html/popup.html",
+		"default_icon": {
+			"16": "/images/lock16.png",
+			"48": "/images/login-7-48.png",
+			"128": "/images/lock128.png"
+		}
+	},
+	"permissions": [
+		"identity",
+		"identity.email"
+	],
+	"background": {
+		"service_worker": "js/background.js"
+	}
+}
